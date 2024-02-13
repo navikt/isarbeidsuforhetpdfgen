@@ -24,18 +24,14 @@ spec:
     initialDelay: 5
     periodSeconds: 5
     failureThreshold: 30
-  leaderElection: false
   prometheus:
     enabled: true
     path: /prometheus
-  istio:
-    enabled: false
   resources:
     limits:
-      cpu: 800m
       memory: 1024Mi
     requests:
-      cpu: 500m
+      cpu: 10m
       memory: 512Mi
   accessPolicy:
     inbound:
