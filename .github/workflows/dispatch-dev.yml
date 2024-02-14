@@ -14,7 +14,7 @@ jobs:
     permissions:
       contents: read
       id-token: write
-    uses: navikt/isworkflows/.github/workflows/manual-deploy-dev.yml@deploy-v2
+    uses: navikt/isworkflows/.github/workflows/manual-deploy-dev.yml@master
     with:
       git-commit: ${{ github.event.inputs.gitCommit }}
       dev-nais-template: .nais/nais-dev.yaml

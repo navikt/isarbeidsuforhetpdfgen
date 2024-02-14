@@ -28,7 +28,7 @@ jobs:
     permissions:
       contents: read
       id-token: write
-    uses: navikt/isworkflows/.github/workflows/deploy-dev-og-prod.yml@deploy-v2
+    uses: navikt/isworkflows/.github/workflows/deploy-dev-og-prod.yml@master
     with:
       image: ${{ needs.build.outputs.image }}
       dev-cluster: dev-gcp
